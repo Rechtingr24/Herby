@@ -60,7 +60,7 @@ public class MecanumDriveSubsystem extends SubsystemBase {
         MecanumDriveWheelSpeeds wheelSpeeds = KINEMATICS.toWheelSpeeds(speeds);
 
         double frontLeftSpeed = wheelSpeeds.frontLeftMetersPerSecond;
-        double frontRightSpeed = wheelSpeeds.frontRightMetersPerSecond;
+        double frontRightSpeed = -wheelSpeeds.frontRightMetersPerSecond;
         double backLeftSpeed = wheelSpeeds.rearLeftMetersPerSecond;
         double backRightSpeed = wheelSpeeds.rearRightMetersPerSecond;
 
