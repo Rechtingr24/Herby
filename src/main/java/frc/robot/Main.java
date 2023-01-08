@@ -24,3 +24,7 @@ public final class Main {
         RobotBase.startRobot(Robot::new);
     }
 }
+
+//git add .
+//git commit -m "<your message>"
+//git push

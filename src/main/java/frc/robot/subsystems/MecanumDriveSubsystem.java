@@ -56,7 +56,7 @@ public class MecanumDriveSubsystem extends SubsystemBase {
     }
 
     public void chasisToWheelSpeeds(double forwardSpeed, double sideSpeed, double rotationSpeed) {
-        ChassisSpeeds speeds = new ChassisSpeeds(forwardSpeed, sideSpeed, rotationSpeed);
+        ChassisSpeeds speeds = new ChassisSpeeds(forwardSpeed/3, sideSpeed, rotationSpeed/30);
         MecanumDriveWheelSpeeds wheelSpeeds = KINEMATICS.toWheelSpeeds(speeds);
 
         double frontLeftSpeed = wheelSpeeds.frontLeftMetersPerSecond;
